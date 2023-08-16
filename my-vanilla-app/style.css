@@ -1,13 +1,12 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
 
 body {
 	background: #f6f5f1 0% 0% no-repeat padding-box;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 ul {
@@ -56,7 +55,7 @@ ul {
 }
 .CategoriesFilters-root {
 	display: block;
-	max-width: calc(100% - 160px - 16px);
+	margin-left: 16px;
 	width: 100%;
 }
 
@@ -68,9 +67,10 @@ ul {
 
 .CategoriesList-root > li {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
+	Justify-content: space-evenly; 
 	width: 160px;
 	height: 160px;
 	background-color: #fff;
@@ -78,15 +78,6 @@ ul {
 	border-radius: 8px;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
-}
+
+
+
