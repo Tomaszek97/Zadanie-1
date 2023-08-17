@@ -17,8 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			types.forEach(function (type) {
 				const typeItem = document.createElement('li')
+				const buttonItem = document.createElement('button')
+				buttonItem.classList.add('btn-type-item')
+				buttonItem.setAttribute('id', 'button-type' + type.id)
 				typeItem.classList.add('Types-item')
 				typeItem.textContent = type.name
+				typeItem.appendChild(buttonItem)
 				typesList.appendChild(typeItem)
 			})
 		})
@@ -48,3 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 })
+
+const buttons = document.getElementsByClassName('btn-type-item')
+console.table(buttons)
