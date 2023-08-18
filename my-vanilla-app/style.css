@@ -31,18 +31,18 @@ ul {
 	justify-content: space-between;
 }
 
-.TypesFilters-root {
+.typesFilters-root {
 	display: block;
 	max-width: 160px;
 	width: 100%;
 }
 
-.FilterLabel-root {
+.filterLabel-root {
 	font-size: 14px;
 	margin-bottom: 16px;
 }
 
-.Types-item {
+.types-item {
 	display: flex;
 	align-items: center;
 	padding: 12px;
@@ -53,31 +53,26 @@ ul {
 	transition: all 0.2s;
 	cursor: pointer;
 }
-.CategoriesFilters-root {
+.categoriesFilters-root {
 	display: block;
 	margin-left: 16px;
 	width: 100%;
 }
 
-.CategoriesList-root {
+.categoriesList-root {
 	display: flex;
 	flex-wrap: wrap;
 	margin: -8px;
 }
 
-.CategoriesList-root > li {
+.categoriesList-root > li {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
-	justify-content: center;
-	Justify-content: space-evenly; 
+	justify-content: space-evenly;
 	width: 160px;
 	height: 160px;
 	background-color: #fff;
 	margin: 8px;
 	border-radius: 8px;
 }
-
-
-
-
