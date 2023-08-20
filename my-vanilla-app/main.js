@@ -55,12 +55,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	const buttons = document.getElementsByClassName('btn-type-item')
 	for (let i = 0; i < buttons.length; i++) {
 		const button = buttons[i]
-		button.addEventListener('click', function () {
-			const typeId = button.getAttribute('id')
-			const filteredCategories = categoriesData.filter(category => category.typeId === typeId)
 
-			categoriesList.innerHTML = ''
-			filteredCategories.forEach(createCategoryElement)
+		buttons.addEventListener('click', function () {
+			const typeId = button.getAttribute('id')
+
+			fetch(`https://api-eko-bazarek.azurewebsites.net/api/products/types/${typeId}`)
+				.then(response => response.json())
+				.then(filteredCategories => {
+					categoriesList.innerHTML = ''
+
+					filteredCategories.forEach(createCategoryElement)
+				})
 		})
 	}
 })
+
+

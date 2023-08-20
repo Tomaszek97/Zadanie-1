@@ -42,7 +42,7 @@ ul {
 	margin-bottom: 16px;
 }
 
-.types-item {
+.types-item{
 	display: flex;
 	align-items: center;
 	padding: 12px;
@@ -76,3 +76,4 @@ ul {
 	margin: 8px;
 	border-radius: 8px;
 }
+
