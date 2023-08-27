@@ -42,11 +42,13 @@ ul {
 	margin-bottom: 16px;
 }
 
-.types-item{
+.btn-type-item {
+	border: none;
 	display: flex;
 	align-items: center;
 	padding: 12px;
 	height: 42px;
+	width: 100%;
 	margin-bottom: 8px;
 	background-color: #fff;
 	border-radius: 8px;
@@ -76,4 +78,18 @@ ul {
 	margin: 8px;
 	border-radius: 8px;
 }
+
+.filter-checkbox{
+width: 30px;
+height: 20px;
+}
+
+
+.btn-type-item:hover {
+	box-shadow: lime;
+	background-color: rgb(38, 197, 38);
+}
+
+
+
 
